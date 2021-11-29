@@ -59,3 +59,36 @@ a {
     font-size: 1rem;
 }
 /*--End Base Font Styles--*/
+
+/*--Start Header Styles (Desktop)--*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.136rem;
+    padding: 0 0.455rem;
+    border-bottom: 1px solid seashell;
+    position: sticky;
+}
+#nav-logo {
+    height: 2.273rem;
+}
+#nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list-item {
+    margin-left: 1rem;
+}
+.nav-link {
+    color:seashell;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+.nav-link:active {
+    color: lightslategray;
+}
+/*--End Header Styles (Desktop)--*/
