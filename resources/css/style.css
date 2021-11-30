@@ -69,34 +69,31 @@ a {
 /*--Start Header Styles (Desktop)--*/
 header {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    height: 3.136rem;
-    padding: 0 1rem;
     border-bottom: 1px solid seashell;
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: black;
+    background: black;
+    padding: 9.5px 10px 9.5px 10px;
 }
 #nav-logo {
-    height: 2.273rem;
+    height: 50px;
 }
 #nav-list {
     list-style: none;
-    display: flex;
 }
 .nav-list-item {
-    margin-left: 1rem;
+    display: inline;
 }
 .nav-link {
-    display: block;
+    padding: 10px;
     color:seashell;
-    text-decoration: none;
 }
 .nav-link:hover {
-    color: white;
-    text-decoration: underline;
+    color: lightgray;
 }
 .nav-link:active {
     color: lightslategray;
@@ -104,14 +101,10 @@ header {
 /*--End Header Styles (Desktop)--*/
 
 /*--Start Header Styles (Mobile)--*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     header {
         flex-direction: column;
-        height: auto;
-        padding: 0.5rem;
-    }
-    #nav-logo {
-        margin: 0.5rem;
+        justify-content: center;
     }
 }
 /*--End Header Styles (Mobile)--*/
@@ -121,65 +114,91 @@ main {
     max-width: 1200px;
     margin: 0 auto
 }
+section {
+    margin: 0 auto 2rem auto;
+}
 /*--End Main Styles--*/
 
 /*--Start Mission Section Styles (Desktop)--*/
 #mission {
-    background-image: url("../images/img-mission-background.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: black url("../images/img-mission-background.jpg") center/cover no-repeat;
     height: 700px;
     display: flex;
     align-items: center;
 }
 #mission-content-container {
-    background-color: black;
+    background: black;
     width: 100%;
-    padding: 0.5rem;
 }
-#mission-content-container h2 {
-    padding:0.25rem;
-    margin-bottom: 0.5rem;
+#mission-content-container > * {
+    padding: 10px;
 }
 /*--End Mission Section Styles (Desktop)--*/
 
-/*--Start Mission Section Styles (Mobile)--*/
-@media only screen and (max-width: 768px) {
-    #mission {
-        height: 70vh;
-    }
-}
-/*--End Mission Section Styles (Mobile)--*/
-
-/*--Start Featured Section Styles (Desktop)--*/
+/*--Start Featured Section Styles--*/
 #featured {
     max-width: 1000px;
-    margin: 0 auto;
+}
+#featured-heading, #featured-subheading {
+    padding: 10px;
+}
+#featured-flex-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#featured h2 {
-    padding: 1rem;
-}
-#featured-subheading h5 {
-    padding: 1rem;
-}
-#featured-grid-container {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    flex: 1 1 300px;
-    gap: 1rem;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0 0 0;
 }
 .featured-card {
-}
-.featured-card img {
     max-width: 300px;
-    max-height: 200px;
 }
 .featured-card h5 {
-    padding-top: 10px;
+    padding: 10px 0 0 0;
 }
-/*--End Featured Section Styles (Desktop)--*/
+#featured img {
+    width: 100%;
+    max-height: 200px;
+}
+/*--End Featured Section Styles--*/
+
+/*Locations*/
+#locations {
+    background: black url("../images/img-locations-background.jpg") center/cover no-repeat;
+    min-height: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+#locations-heading {
+    padding: 15px;
+}
+#locations-flex-container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.location-card {
+    background: black;
+    flex-basis: 300px;
+    padding: 10px;
+}
+.location-card > * {
+    padding: 15px 0 15px 0;
+}
+
+/*Contact*/
+#contact {
+    min-height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+/*Footer*/
+footer {
+    padding: 20px;
+    text-align: left;
+}

@@ -11,8 +11,8 @@
             <nav>
                 <ul id="nav-list">
                     <li class="nav-list-item"><a class="nav-link" href="#">Mission</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Featured Tea</a></li>
-                    <li class="nav-list-item"><a class="nav-link" href="#">Locations</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#featured">Featured Tea</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#locations">Locations</a></li>
                 </ul>
             </nav>
         </header>
@@ -24,9 +24,9 @@
                 </div>
             </section>
             <section id="featured">
-                <h2>Tea of the Month</h2>
+                <h2 id="featured-heading">Tea of the Month</h2>
                 <h5 id="featured-subheading">What's Steeping at The Tea Cozy?</h5>
-                <div id="featured-grid-container">
+                <div id="featured-flex-container">
                     <div class="featured-card">
                         <img src="./resources/images/img-berryblitz.jpg">
                         <h5>Fall Berry Blitz Tea</h5>
@@ -49,9 +49,37 @@
                     </div>
                 </div>
             </section>
-            <section id="locations"></section>
-            <section id="contact"></section>
+            <section id="locations">
+                <h2 id="locations-heading">Locations</h2>
+                <div id="locations-flex-container">
+                    <div class="location-card">
+                        <h3 class="location-card-heading">Downtown</h3>
+                        <p>384 West 4th St</p>
+                        <p>Suite 108</p>
+                        <p>Portland, Maine</p>
+                    </div>
+                    <div class="location-card">
+                        <h3 class="location-card-heading">East Bayside</h3>
+                        <p>3433 Phisherman's Avenue</p>
+                        <p>(Northwest Corner)</p>
+                        <p>Portland, Maine</p>
+                    </div>
+                    <div class="location-card">
+                        <h3 class="location-card-heading">Oakdale</h3>
+                        <p>515 Crescent Avenue</p>
+                        <p>Second Floor</p>
+                        <p>Portland, Maine</p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>The Tea Cozy</h2>
+                <h5>contact@theteacozy.com</h5>
+                <p>917-555-8904</p>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            <p>&copy; The Tea Cozy 2017</p>
+        </footer>
     </body>
 </html>
